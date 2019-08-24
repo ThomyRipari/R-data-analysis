@@ -3,7 +3,7 @@ library(XML)
 
 url = "../data/first-theme/cd_catalog.xml"
 
-xmldoc = xmlParse(url) #XMLInternalDocument
+xmldoc = xmlParse(url) # XMLInternalDocument
 rootnode = xmlRoot(xmldoc)
 rootnode[2]
 
