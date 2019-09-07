@@ -20,9 +20,9 @@ summary(data)
 
 # Delete Cols
 
-rows_clean = c("medv", "lstat")
-data_clean_rows = data[, !(names(data) %in% rows_clean)]
-names(data_clean_rows)
+cols_clean = c("medv", "lstat")
+data_clean_cols = data[, !(names(data) %in% cols_clean)]
+names(data_clean_cols)
 
 
 # Complete NAs with Mean or Median
