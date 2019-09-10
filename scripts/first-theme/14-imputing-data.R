@@ -15,9 +15,7 @@ imputed_data = mice(housing.data[, names(housing.data) %in% columns],
 
 # pmm - Comparacion predictiva de medias
 
-
 complete.data = mice::complete(imputed_data)
-
 
 housing.data$rad = complete.data$rad
 housing.data$ptratio = complete.data$ptratio
